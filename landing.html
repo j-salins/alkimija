@@ -1,0 +1,408 @@
+<div id="video-container">
+  <div class="plyr__video-wrapper"><video playsinline="" webkit-playsinline="" loop="" muted="" autoplay=""
+           data-poster="https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail"
+           src="https://j-salins.github.io/alkimija/Fons_FINAL4K_ULTIMATE_comp.mp4"></video>
+    <div class="plyr__poster"
+         style="background-image: url(&quot;https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail&quot;);">
+    </div>
+  </div>
+  <div class="video-overlay"></div>
+</div>
+<div id="slogan-container">
+  <h1 aria-label="Alkimija developer" id="slogan" class="roboto-font-c" style="margin:0!important;">
+    Alkimija<span class="typewriter roboto-font" style="font-size: 3rem; color:white;"></span>
+  </h1>
+  <p id="slogan-2">Professional video and design production.</p>
+</div>
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+  @import url('https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&display=swap');
+
+  .roboto-font-c {
+    font-family: "Bevan", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+
+  #topBar {
+    display: none;
+  }
+
+  #logo {
+    filter: invert(1);
+  }
+
+  #nav li a {
+    color: white !important;
+  }
+
+  #slogan-container {
+    position: fixed;
+    z-index: 666;
+    top: 0;
+    color: white;
+    font-size: 4rem;
+    width: 450px;
+    margin: 0 !important;
+  }
+
+  #slogan {
+    color: white;
+    font-size: 3rem;
+    position: relative;
+    display: block;
+    margin: 0;
+  }
+
+  #slogan-2 {
+    display: block;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 300;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    position: relative;
+    margin: 0;
+  }
+
+  #mobile-navigation {
+    background-color: transparent !important;
+  }
+
+  #video-container {
+    position: fixed;
+    background: black;
+    pointer-events: none !important;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    width: 100vw !important;
+    height: 100vh !important;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+  }
+
+  .plyr__video-wrapper {
+    position: fixed !important;
+    pointer-events: none;
+  }
+
+  .plyr__video-wrapper video {
+    object-fit: cover !important;
+    filter: brightness(100%);
+  }
+
+  #video-container video {
+    width: 100vw;
+    /* Fill the available width */
+    height: 100vh;
+    /* Adjust height automatically */
+  }
+
+  #bottomBar {
+    position: absolute !important;
+    bottom: 0px;
+  }
+
+  .video-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.1) 1px, transparent 1px);
+    background-size: 2px 2px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh !important;
+    padding: 0;
+    margin: 0;
+    z-index: 20;
+    opacity: 1;
+  }
+
+  #block-yui_3_17_2_6_1414428255290_5897 p {
+    color: white;
+  }
+
+  .sqs-svg-icon--wrapper div {
+    background-color: transparent !important;
+  }
+
+  #block-yui_3_17_2_1_1609326969853_5247 use.sqs-use--mask {
+    fill: white !important;
+  }
+
+  #navigator footer#bottomBar #footerBlock {
+    padding: 0;
+  }
+
+  /* Typewriter effect 1 */
+  @keyframes typing {
+
+    0.0000%,
+    27.3488% {
+      content: " ";
+      color: white;
+      font-weight: 200;
+      text-shadow: none;
+    }
+
+    1.1395%,
+    26.2093% {
+      content: " D";
+      color: white;
+    }
+
+    2.2791%,
+    25.0698% {
+      content: " De";
+      color: white;
+    }
+
+    3.4186%,
+    23.9302% {
+      content: " Des";
+      color: white;
+    }
+
+    4.5581%,
+    22.7907% {
+      content: " Desi";
+      color: white;
+    }
+
+    5.6977%,
+    21.6512% {
+      content: " Desig";
+      color: white;
+    }
+
+    6.8372%,
+    20.5116% {
+      content: " Design";
+      color: white;
+    }
+
+    30.7674%,
+    51.2791% {
+      content: " ";
+      color: white;
+    }
+
+    31.9070%,
+    50.1395% {
+      content: " V";
+      color: white;
+    }
+
+    33.0465%,
+    49.0000% {
+      content: " Vi";
+      color: white;
+    }
+
+    34.1860%,
+    47.8605% {
+      content: " Vid";
+      color: white;
+    }
+
+    35.3256%,
+    46.7209% {
+      content: " Vide";
+      color: white;
+    }
+
+    36.4651%,
+    45.5814% {
+      content: " Video";
+      color: white;
+      font-weight: 200;
+      text-shadow: none;
+    }
+
+    54.6977% {
+      content: ".";
+      color: #00d791;
+      font-weight: 200;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    55.8372% {
+      content: ".d";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    56.9767% {
+      content: ".di";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    58.1163% {
+      content: ".dig";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    59.2558% {
+      content: ".digi";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    60.3953% {
+      content: ".digit";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    61.5349% {
+      content: ".digita";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    62.5349% {
+      content: ".digital";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    88.6279% {
+      content: ".digital";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    89.7674% {
+      content: ".digita";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    90.9070% {
+      content: ".digit";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    92.0465% {
+      content: ".digi";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    93.1860% {
+      content: ".dig";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    94.3256% {
+      content: ".di";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    95.3256% {
+      content: ".d";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+
+    96.3256% {
+      content: "";
+      color: #00d791;
+      font-weight: 500;
+      text-shadow: 2px 2px 2px grey;
+    }
+  }
+
+  @keyframes blink {
+
+    0%,
+    100% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 0;
+    }
+  }
+
+  .typewriter {
+    --caret: currentcolor;
+  }
+
+  .typewriter::before {
+    content: "";
+    animation: typing 10.5s infinite;
+    animation-delay: 1.5s;
+  }
+
+  .typewriter::after {
+    content: "";
+    border-right: 1px solid var(--caret);
+    animation: blink 0.5s linear infinite;
+  }
+
+  .typewriter.thick::after {
+    border-right: 0.2ch solid var(--caret);
+    margin-top: 10px;
+  }
+
+  .typewriter.nocaret::after {
+    border-right: 0;
+  }
+
+  @media (min-width:320px) {
+
+    /* hi-res laptops and desktops */
+    #slogan-container {
+      transform: scale(0.65) translate(-100%, -100%);
+      top: 45%;
+      left: 65%;
+    }
+  }
+
+  @media (min-width:320px) {
+    .video-overlay {
+      background-size: 2px 2px;
+    }
+  }
+
+  @media (min-width:1281px) {
+
+    /* hi-res laptops and desktops */
+    #slogan-container {
+      transform: scale(1) translate(-50%, -50%);
+      top: 50%;
+      left: 50%;
+    }
+
+    .video-overlay {
+      background-size: 3px 3px;
+    }
+  }
+</style>
