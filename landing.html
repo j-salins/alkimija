@@ -27,8 +27,7 @@
       </div>
     </div>
     <img class="logo" src="alkimija-logo-white.png"></img>
-    <div class="enter"><a href="https://alkimija.digital"><span
-              style="border-bottom: 2px solid rgba(255, 255, 255, .7);">UZ GALERIJU </span><span
+    <div class="enter"><a href="https://alkimija.digital">UZ GALERIJU </span><span
               style="font-size: 1.8rem;">&nbsp; &#8250;</span></a>
     </div>
   </div>
@@ -82,15 +81,6 @@
       color: white !important;
     }
 
-    .line {
-      /* 	flex-basis: 50%; */
-      font-size: 40px;
-      color: #e9bb03;
-      position: absolute;
-      opacity: 0;
-      font-size: 3rem;
-    }
-
     .enter {
       position: relative;
       font-family: "Montserrat", sans-serif;
@@ -105,10 +95,26 @@
     }
 
     .enter a {
+      display: block !important;
       text-decoration: none;
       color: white;
       display: flex;
       align-items: center;
+      width: fit-content;
+    }
+
+    .enter a:after {
+      content: '';
+      display: block;
+      height: 2px;
+      width: 0px;
+      background: transparent;
+      transition: width .5s ease, background-color .5s ease;
+    }
+
+    .enter a:hover:after {
+      width: 100%;
+      background: #ffcc00;
     }
 
     #slogan {
@@ -237,7 +243,7 @@
       font-size: 3rem;
       /* Large font size */
       font-weight: 800;
-      color: #ffd104;
+      color: #ffcc00;
       /* White text */
       opacity: 0;
       /* Initially hidden */
