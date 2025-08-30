@@ -3,7 +3,7 @@
 <head></head>
 
 <body>
-  <div id="video-container">
+<div id="video-container">
     <div class="plyr__video-wrapper"><video playsinline="" webkit-playsinline="" loop="" muted="" autoplay=""
              data-poster="https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail"
              src="https://j-salins.github.io/alkimija/Fons_FINAL4K_ULTIMATE_comp.mp4"></video>
@@ -26,14 +26,19 @@
       </div>
     </div>
     <img class="logo" src="https://j-salins.github.io/alkimija/alkimija-logo-white.png"></img>
-    <div class="enter"><a href="https://alkimija.digital">UZ GALERIJU<span class="arrow">
-          &#8250;</span></a>
+    <div class="enter"><a href="https://alkimija.digital">UZ GALERIJU</a><span class="arrow">
+          &#8250;</span>
+    </div>
     </div>
   </div>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
+    html {
+        height: 100%;
+        width: 100%;
+    }
     .content-container {
       display: grid;
       position: fixed;
@@ -43,6 +48,7 @@
       inset: 0;
       margin: auto;
       align-items: center;
+      padding: 1rem;
     }
 
     #slogan-container {
@@ -54,7 +60,6 @@
       /* Adjusts the space between columns */
       /* Aligns the grid to the center of the container */
       color: white;
-      font-size: 4rem;
       margin: 0 !important;
       grid-column: 1/2;
       grid-row: 1/2;
@@ -70,6 +75,8 @@
       grid-column: 1/2;
       grid-row: 1/2;
       opacity: 0.3;
+      width: 15vh;
+      transform: translate(-6vh, -3vw);
       user-select: none;
     }
 
@@ -84,21 +91,17 @@
       display: none;
     }
 
-    #logo {
-      filter: invert(1);
-    }
-
     #nav li a {
       color: white !important;
     }
 
     .enter {
+      display: flex;
       position: relative;
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       color: white;
-      font-size: 2rem;
-      margin-top: 15rem;
+      margin-top: 5rem;
       letter-spacing: 0.11rem;
       grid-column: 1/2;
       grid-row: 1/2;
@@ -107,11 +110,13 @@
     }
 
     .arrow {
-      font-size: 3rem;
-      position: absolute;
-      top: 0;
-      line-height: 1.9rem;
-      padding-left: 10px;
+      font-size: 1.5rem;
+      padding-bottom: 0.5rem;
+    }
+
+    a {
+      border-color:transparent!important;
+      border-width:0px!important;
     }
 
     .enter a {
@@ -135,17 +140,18 @@
 
     .enter a:hover:after {
       width: 100%;
-      background: #FFCB54;
+      background: #fcbb4c;
     }
 
     #slogan {
       color: white;
-      font-size: 4rem;
+      font-size: 1.5rem;
       position: relative;
       display: block;
       margin: 0;
       pointer-events: none;
       user-select: none;
+      text-align: right;
     }
 
     #mobile-navigation {
@@ -185,6 +191,7 @@
     #bottomBar {
       position: absolute !important;
       bottom: 0px;
+      width: 100vw;
     }
 
     .video-overlay {
@@ -206,9 +213,30 @@
       color: white;
     }
 
-    .sqs-svg-icon--wrapper div {
+.sqs-html-content {
+display: none!important;
+}
+
+
+.sqs-svg-icon--wrapper.email div svg {
+display:none!important;
+}
+
+.sqs-svg-icon--wrapper.email {
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='butt' stroke-linejoin='round'%3E%3Cpath d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'%3E%3C/path%3E%3Cpolyline points='22,6 12,13 2,6'%3E%3C/polyline%3E%3C/svg%3E");
+    background-position: center center;
+}
+
+.sqs-svg-icon--wrapper div {
       background-color: transparent !important;
     }
+
+.sqs-layout > .sqs-row {
+   margin-left: 0;
+    margin-right: 0;
+}
+    
 
     #block-yui_3_17_2_1_1609326969853_5247 use.sqs-use--mask {
       fill: white !important;
@@ -227,7 +255,7 @@
       font-size: 4rem;
       /* Large font size */
       font-weight: 800;
-      color: #FFCB54;
+      color: #fcbb4c;
       /* White text */
       opacity: 0;
       /* Initially hidden */
@@ -320,7 +348,7 @@
 
       .logo {
         width: 20vh;
-        transform: translateX(-10vh);
+        transform: translateX(-7.7vh)translateY(-2vh);
         height: auto;
       }
 
