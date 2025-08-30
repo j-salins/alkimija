@@ -70,6 +70,7 @@
       grid-column: 1/2;
       grid-row: 1/2;
       opacity: 0.3;
+      user-select: none;
     }
 
     .roboto-font-c {
@@ -102,6 +103,7 @@
       grid-column: 1/2;
       grid-row: 1/2;
       z-index: 555;
+      user-select: none;
     }
 
     .arrow {
@@ -133,7 +135,7 @@
 
     .enter a:hover:after {
       width: 100%;
-      background: #ffcc00;
+      background: #FFCB54;
     }
 
     #slogan {
@@ -142,6 +144,8 @@
       position: relative;
       display: block;
       margin: 0;
+      pointer-events: none;
+      user-select: none;
     }
 
     #mobile-navigation {
@@ -223,7 +227,7 @@
       font-size: 4rem;
       /* Large font size */
       font-weight: 800;
-      color: #ffcc00;
+      color: #FFCB54;
       /* White text */
       opacity: 0;
       /* Initially hidden */
@@ -234,6 +238,8 @@
       grid-column: 1/2;
       grid-row: 1/2;
       /* Ensure words can take up significant width on smaller screens */
+      pointer-events: none;
+      user-select: none;
     }
 
     @keyframes fadeInOut {
@@ -313,8 +319,8 @@
       }
 
       .logo {
-        width: 30vh;
-        transform: translateX(-13vh);
+        width: 20vh;
+        transform: translateX(-10vh);
         height: auto;
       }
 
