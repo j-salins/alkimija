@@ -1,262 +1,331 @@
 <html>
-  <head></head>
-  <body>
-    <div id="video-container">
-      <div class="plyr__video-wrapper"><video playsinline="" webkit-playsinline="" loop="" muted="" autoplay=""
-               data-poster="https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail"
-               src="https://j-salins.github.io/alkimija/Fons_FINAL4K_ULTIMATE_comp.mp4"></video>
-        <div class="plyr__poster"
-             style="background-image: url(&quot;https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail&quot;);">
-        </div>
+
+<head></head>
+
+<body>
+  <div id="video-container">
+    <div class="plyr__video-wrapper"><video playsinline="" webkit-playsinline="" loop="" muted="" autoplay=""
+             data-poster="https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail"
+             src="https://j-salins.github.io/alkimija/Fons_FINAL4K_ULTIMATE_comp.mp4"></video>
+      <div class="plyr__poster"
+           style="background-image: url(&quot;https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail&quot;);">
       </div>
-      <div class="video-overlay"></div>
     </div>
+    <div class="video-overlay"></div>
+  </div>
+  <div style="display: grid; position:relative; width:100%; height:100%; align-items: center;
+  justify-items: center;">
     <div id="slogan-container">
       <div aria-label="Alkimija developer" id="slogan" class="roboto-font-c" style="margin:0!important;">
         ALCHEMY
       </div>
-      <div>
-        <div class="line roboto-font-c">
-        .DIGITAL
-      </div>
-      
-      <div class="line roboto-font-c">
-        OF MOTION
-      </div>
-      
-      <div class="line roboto-font-c">
-         OF SOUND
-      </div>
-      
-      <div class="line roboto-font-c">
-         OF STORY
+      <div class="word-container">
+        <div class="word roboto-font-c" id="word1">DIGITAL</div>
+        <div class="word roboto-font-c" id="word2">OF MOTION</div>
+        <div class="word roboto-font-c" id="word3">OF SOUND</div>
+        <div class="word roboto-font-c" id="word4">OF STORY</div>
       </div>
     </div>
-    <div class="enter" style="grid-column: 1 / span 3; position: relative;"><span style="border-bottom: 2px solid rgba(255, 255, 255, .7);">UZ GALERIJU </span><span style="font-size: 1.8rem; position: absolute; top:-60%;">&nbsp; &#8250;</span></div>
-    
+    <img class="logo" src="alkimija-logo-white.png"></img>
+    <div class="enter"><a href="https://alkimija.digital"><span
+              style="border-bottom: 2px solid rgba(255, 255, 255, .7);">UZ GALERIJU </span><span
+              style="font-size: 1.8rem;">&nbsp; &#8250;</span></a>
     </div>
+  </div>
 
-    
-    
-    <style>
-      @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-    
-      .roboto-font-c {
-        font-family: "Montserrat", sans-serif;
-        font-optical-sizing: auto;
-        font-style:italic;
-        font-weight: 800;
-      }
-    
-      #topBar {
-        display: none;
-      }
-    
-      #logo {
-        filter: invert(1);
-      }
-    
-      #nav li a {
-        color: white !important;
-      }
-    
-      #slogan-container {
-        display: grid;
-      grid-template-columns: auto auto; /* Each column's width is based on its content */
-      gap: 20px; /* Adjusts the space between columns */
-      justify-content: start; /* Aligns the grid to the center of the container */
-      
-        position: fixed;
-        z-index: 666;
-        top: 0;
-        color: white;
-        font-size: 4rem;
-        width: 450px;
-        margin: 0 !important;
-      }
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-      .line {
+    .logo-container {
+      position: absolute;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    #slogan-container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /* Each column's width is based on its content */
+      gap: 20px;
+      /* Adjusts the space between columns */
+      /* Aligns the grid to the center of the container */
+      color: white;
+      font-size: 4rem;
+      margin: 0 !important;
+      grid-column: 1/2;
+      grid-row: 1/2;
+    }
+
+    #slogan-container>* {
+      flex: 1;
+      /* this is to make elements/columns in each row have equal width and fill up all available space in the row, similar to auto-fit in grid */
+      /* flex-grow: 1; this can be used to make elements/columns in each row maintain their individual width but stretch to fill up all available space in the row */
+    }
+
+    .logo {
+      width: 27vh;
+      height: auto;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      opacity: 0.3;
+    }
+
+    .roboto-font-c {
+      font-family: "Montserrat", sans-serif;
+      font-optical-sizing: auto;
+      font-style: italic;
+      font-weight: 800;
+    }
+
+    #topBar {
+      display: none;
+    }
+
+    #logo {
+      filter: invert(1);
+    }
+
+    #nav li a {
+      color: white !important;
+    }
+
+    .line {
       /* 	flex-basis: 50%; */
-        font-size: 40px;
-        color: #ffd014;
-        position: absolute;
-        opacity: 0;
-         font-size: 3rem;
+      font-size: 40px;
+      color: #e9bb03;
+      position: absolute;
+      opacity: 0;
+      font-size: 3rem;
+    }
+
+    .enter {
+      position: relative;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 600;
+      color: white;
+      font-size: 1rem;
+      margin-top: 20vh;
+      letter-spacing: 0.11rem;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      cursor: crosshair;
+      z-index: 555;
+    }
+
+    .enter a {
+      text-decoration: none;
+      color: white;
+      display: flex;
+      align-items: center;
+    }
+
+    #slogan {
+      color: white;
+      font-size: 3rem;
+      position: relative;
+      display: block;
+      margin: 0;
+    }
+
+    #slogan-2 {
+      display: block;
+      color: white;
+      font-family: "Roboto", sans-serif;
+      font-optical-sizing: auto;
+      font-style: normal;
+      font-weight: 300;
+      color: white;
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+      position: relative;
+      margin: 0;
+    }
+
+    #mobile-navigation {
+      background-color: transparent !important;
+    }
+
+    #video-container {
+      position: fixed;
+      background: black;
+      pointer-events: none !important;
+      top: 0;
+      left: 0;
+      width: 100vw !important;
+      height: 100vh !important;
+      padding: 0;
+      margin: 0;
+      overflow: hidden;
+    }
+
+    .plyr__video-wrapper {
+      position: fixed !important;
+      pointer-events: none;
+    }
+
+    .plyr__video-wrapper video {
+      object-fit: cover !important;
+      filter: brightness(100%);
+    }
+
+    #video-container video {
+      width: 100vw;
+      /* Fill the available width */
+      height: 100vh;
+      /* Adjust height automatically */
+    }
+
+    #bottomBar {
+      position: absolute !important;
+      bottom: 0px;
+    }
+
+    .video-overlay {
+      background-color: rgba(0, 0, 0, 0.4);
+      background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+      background-size: 2px 2px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh !important;
+      padding: 0;
+      margin: 0;
+      z-index: 20;
+      opacity: 1;
+    }
+
+    #block-yui_3_17_2_6_1414428255290_5897 p {
+      color: white;
+    }
+
+    .sqs-svg-icon--wrapper div {
+      background-color: transparent !important;
+    }
+
+    #block-yui_3_17_2_1_1609326969853_5247 use.sqs-use--mask {
+      fill: white !important;
+    }
+
+    #navigator footer#bottomBar #footerBlock {
+      padding: 0;
+    }
+
+    @media (min-width:320px) {
+      .video-overlay {
+        background-size: 2px 2px;
+      }
+    }
+
+    @media (min-width:1281px) {
+
+      /* hi-res laptops and desktops */
+      .video-overlay {
+        background-size: 3px 3px;
+      }
+
+      .logo {
+        margin-right: 65vh;
+        margin-bottom: 5vh;
       }
 
       .enter {
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        color: white;
-        font-size: 1rem;
-        letter-spacing: 0.11rem;
+        margin-top: 15vh;
+        margin-right: 54vh;
       }
-    
-      #slogan {
-        color: white;
-        font-size: 3rem;
-        position: relative;
-        display: block;
-        margin: 0;
+    }
+
+    .word-container {
+      display: grid;
+    }
+
+    .word {
+      /* Position words on top of each other */
+      font-size: 3rem;
+      /* Large font size */
+      font-weight: 800;
+      color: #ffd104;
+      /* White text */
+      opacity: 0;
+      /* Initially hidden */
+      animation: fadeInOut 8s infinite;
+      /* 10s total animation cycle, infinite loop */
+      /* Subtle glow */
+      text-wrap: nowrap;
+      grid-column: 1/2;
+      grid-row: 1/2;
+      /* Ensure words can take up significant width on smaller screens */
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+        transform: translateY(30px);
       }
-    
-      #slogan-2 {
-        display: block;
-        color: white;
-        font-family: "Roboto", sans-serif;
-        font-optical-sizing: auto;
-        font-style: normal;
-        font-weight: 300;
-        color: white;
-        font-size: 1rem;
-        letter-spacing: 0.05rem;
-        position: relative;
-        margin: 0;
-      }
-    
-      #mobile-navigation {
-        background-color: transparent !important;
-      }
-    
-      #video-container {
-        position: fixed;
-        background: black;
-        pointer-events: none !important;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        width: 100vw !important;
-        height: 100vh !important;
-        padding: 0;
-        margin: 0;
-        overflow: hidden;
-      }
-    
-      .plyr__video-wrapper {
-        position: fixed !important;
-        pointer-events: none;
-      }
-    
-      .plyr__video-wrapper video {
-        object-fit: cover !important;
-        filter: brightness(100%);
-      }
-    
-      #video-container video {
-        width: 100vw;
-        /* Fill the available width */
-        height: 100vh;
-        /* Adjust height automatically */
-      }
-    
-      #bottomBar {
-        position: absolute !important;
-        bottom: 0px;
-      }
-    
-      .video-overlay {
-        background-color: rgba(0, 0, 0, 0.4 );
-        background-image: linear-gradient(rgba(0, 0, 0, 0.05) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
-        background-size: 2px 2px;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100vh !important;
-        padding: 0;
-        margin: 0;
-        z-index: 20;
+
+      /* Start transparent and slightly below */
+      /* Reverted percentages based on 8s total duration: */
+      14.25% {
         opacity: 1;
+        transform: translateY(0);
       }
-    
-      #block-yui_3_17_2_6_1414428255290_5897 p {
-        color: white;
-      }
-    
-      .sqs-svg-icon--wrapper div {
-        background-color: transparent !important;
-      }
-    
-      #block-yui_3_17_2_1_1609326969853_5247 use.sqs-use--mask {
-        fill: white !important;
-      }
-    
-      #navigator footer#bottomBar #footerBlock {
-        padding: 0;
-      }
-    
-      
-    
-      @media (min-width:320px) {
-    
-        /* hi-res laptops and desktops */
-        #slogan-container {
-          transform: scale(0.65) translate(-100%, -100%);
-          top: 45%;
-          left: 65%;
-        }
-      }
-    
-      @media (min-width:320px) {
-        .video-overlay {
-          background-size: 2px 2px;
-        }
-      }
-    
-      @media (min-width:1281px) {
-    
-        /* hi-res laptops and desktops */
-        #slogan-container {
-          transform: scale(1) translate(-50%, -50%);
-          top: 50%;
-          left: 50%;
-          width: 700px;
-        }
-    
-        .video-overlay {
-          background-size: 3px 3px;
-        }
-      }
-    </style>
-  </body>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.20.2/TweenMax.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script src="ttps://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText.min.js"></script>
 
-    <script>
-      var line = $('.line');
+      /* Fade in (0.5s into 8s = 6.25%) */
+      23.5% {
+        opacity: 1;
+        transform: translateY(0);
+      }
 
-var tl = new TimelineLite({
-			onComplete: function(){
-				tl.restart();
-			}
-		});
+      /* Hold (1.0s into 8s = 12.5%) */
+      34.75% {
+        opacity: 0;
+        transform: translateY(-50px);
+      }
 
- 
-TweenLite.defaultEase = Power2.easeInOut;
+      /* Fade out (1.5s into 8s = 18.75%) */
+      100% {
+        opacity: 0;
+      }
 
-var time = 1;
-var y = 200;
+      /* Remain hidden for the rest of the 8s cycle */
+    }
 
-tl
-	.add ( TweenMax.staggerFromTo (
-		line, 0.7,
-			{
-				opacity: 0,
-				x:y,
-			},
-			{	
-				opacity: 1,
-				x: 0,
-			},
-		2 ))
-	.add ( TweenMax.staggerTo (
-		line, time,
-			{
-				delay: time,
-				opacity: 0,
-				x: -y,
-			},
-		2 ), 0.9)
-    </script>
+    /* Apply animation delays to each word for sequential appearance */
+    .word:nth-child(1) {
+      animation-delay: 0s;
+    }
+
+    .word:nth-child(2) {
+      animation-delay: 2s;
+    }
+
+    /* Reverted to 1.5s delay */
+    .word:nth-child(3) {
+      animation-delay: 4s;
+    }
+
+    /* Reverted to 3s delay */
+    .word:nth-child(4) {
+      animation-delay: 6s;
+    }
+
+    /* Reverted to 4.5s delay */
+    /* Responsive adjustments for smaller screens */
+    @media (max-width: 768px) {
+      .word {
+        font-size: 2rem;
+        /* Adjust font size for tablets */
+      }
+    }
+
+    @media (max-width: 480px) {
+      .word {
+        font-size: 1.5rem;
+        /* Adjust font size for mobile phones */
+      }
+    }
+  </style>
+</body>
+
 </html>
