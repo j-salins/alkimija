@@ -13,8 +13,7 @@
     </div>
     <div class="video-overlay"></div>
   </div>
-  <div
-       style="display: grid; position:fixed; width: fit-content; height: fit-content; margin-inline: auto; inset: 0; margin: auto; align-items: center; ">
+  <div class="content-container">
     <div id="slogan-container">
       <div aria-label="Alkimija developer" id="slogan" class="roboto-font-c" style="margin:0!important;">
         ALCHEMY
@@ -27,14 +26,24 @@
       </div>
     </div>
     <img class="logo" src="alkimija-logo-white.png"></img>
-    <div class="enter"><a href="https://alkimija.digital">UZ GALERIJU<span
-              style="font-size: 1.9rem; position: absolute; top: 0; line-height: 0.9rem; padding-left: 10px;">
+    <div class="enter"><a href="https://alkimija.digital">UZ GALERIJU<span class="arrow">
           &#8250;</span></a>
     </div>
   </div>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+    .content-container {
+      display: grid;
+      position: fixed;
+      width: fit-content;
+      height: fit-content;
+      margin-inline: auto;
+      inset: 0;
+      margin: auto;
+      align-items: center;
+    }
 
     #slogan-container {
       display: flex;
@@ -87,12 +96,20 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       color: white;
-      font-size: 1.5rem;
-      margin-top: 10rem;
+      font-size: 2rem;
+      margin-top: 15rem;
       letter-spacing: 0.11rem;
       grid-column: 1/2;
       grid-row: 1/2;
       z-index: 555;
+    }
+
+    .arrow {
+      font-size: 3rem;
+      position: absolute;
+      top: 0;
+      line-height: 1.9rem;
+      padding-left: 10px;
     }
 
     .enter a {
@@ -121,23 +138,9 @@
 
     #slogan {
       color: white;
-      font-size: 3rem;
+      font-size: 4rem;
       position: relative;
       display: block;
-      margin: 0;
-    }
-
-    #slogan-2 {
-      display: block;
-      color: white;
-      font-family: "Roboto", sans-serif;
-      font-optical-sizing: auto;
-      font-style: normal;
-      font-weight: 300;
-      color: white;
-      font-size: 1rem;
-      letter-spacing: 0.05rem;
-      position: relative;
       margin: 0;
     }
 
@@ -211,38 +214,13 @@
       padding: 0;
     }
 
-    @media (min-width:320px) {
-      .video-overlay {
-        background-size: 2px 2px;
-      }
-    }
-
-    @media (min-width:1281px) {
-
-      /* hi-res laptops and desktops */
-      .video-overlay {
-        background-size: 3px 3px;
-      }
-
-      .logo {
-        width: 30vh;
-        transform: translateX(-13vh);
-        height: auto;
-      }
-
-      .enter {
-        font-size: 1rem;
-        margin-top: 6rem;
-      }
-    }
-
     .word-container {
       display: grid;
     }
 
     .word {
       /* Position words on top of each other */
-      font-size: 3rem;
+      font-size: 4rem;
       /* Large font size */
       font-weight: 800;
       color: #ffcc00;
@@ -312,6 +290,45 @@
 
     /* Reverted to 4.5s delay */
     /* Responsive adjustments for smaller screens */
+    @media (min-width:320px) {
+      .video-overlay {
+        background-size: 2px 2px;
+      }
+    }
+
+    @media (min-width:1281px) {
+
+      /* hi-res laptops and desktops */
+      .video-overlay {
+        background-size: 3px 3px;
+      }
+
+      #slogan {
+        font-size: 3rem;
+      }
+
+      .word {
+        font-size: 3rem;
+        ;
+      }
+
+      .logo {
+        width: 30vh;
+        transform: translateX(-13vh);
+        height: auto;
+      }
+
+      .enter {
+        font-size: 1rem;
+        margin-top: 6rem;
+      }
+
+      .arrow {
+        font-size: 1.9rem;
+        line-height: 0.9rem;
+      }
+    }
+
     @media (max-width: 768px) {
       .word {
         font-size: 2rem;
