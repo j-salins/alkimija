@@ -13,8 +13,8 @@
     </div>
     <div class="video-overlay"></div>
   </div>
-  <div style="display: grid; position:relative; width:100%; height:100%; align-items: center;
-  justify-items: center;">
+  <div
+       style="display: grid; position:fixed; width: fit-content; height: fit-content; margin-inline: auto; inset: 0; margin: auto; align-items: center; ">
     <div id="slogan-container">
       <div aria-label="Alkimija developer" id="slogan" class="roboto-font-c" style="margin:0!important;">
         ALCHEMY
@@ -35,12 +35,6 @@
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-    .logo-container {
-      position: absolute;
-      width: 100vw;
-      height: 100vh;
-    }
 
     #slogan-container {
       display: flex;
@@ -64,8 +58,6 @@
     }
 
     .logo {
-      width: 27vh;
-      height: auto;
       grid-column: 1/2;
       grid-row: 1/2;
       opacity: 0.3;
@@ -104,12 +96,11 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       color: white;
-      font-size: 1rem;
-      margin-top: 20vh;
+      font-size: 1.5rem;
+      margin-top: 10rem;
       letter-spacing: 0.11rem;
       grid-column: 1/2;
       grid-row: 1/2;
-      cursor: crosshair;
       z-index: 555;
     }
 
@@ -226,13 +217,14 @@
       }
 
       .logo {
-        margin-right: 65vh;
-        margin-bottom: 5vh;
+        width: 30vh;
+        transform: translateX(-13vh);
+        height: auto;
       }
 
       .enter {
-        margin-top: 15vh;
-        margin-right: 54vh;
+        font-size: 1rem;
+        margin-top: 6rem;
       }
     }
 
