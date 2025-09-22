@@ -3,7 +3,7 @@
 <head></head>
 
 <body>
-<div id="video-container">
+  <div id="video-container">
     <div class="plyr__video-wrapper"><video playsinline="" webkit-playsinline="" loop="" muted="" autoplay=""
              data-poster="https://video.squarespace-cdn.com/content/v1/544e59e8e4b016cfe4b3d557/a12c4693-c2a5-402f-9b08-78738a44c42f/thumbnail"
              src="https://j-salins.github.io/alkimija/Fons_FINAL4K_ULTIMATE_comp.mp4"></video>
@@ -16,29 +16,30 @@
   <div class="content-container">
     <div id="slogan-container">
       <div aria-label="Alkimija developer" id="slogan" class="roboto-font-c" style="margin:0!important;">
-        ALCHEMY
+        ALĶĪMIJA
       </div>
       <div class="word-container">
-        <div class="word roboto-font-c" id="word1">DIGITAL</div>
-        <div class="word roboto-font-c" id="word2">OF MOTION</div>
-        <div class="word roboto-font-c" id="word3">OF SOUND</div>
-        <div class="word roboto-font-c" id="word4">OF STORY</div>
+        <div class="word roboto-font-c" id="word1">.DIGITAL</div>
+        <div class="word roboto-font-c" id="word2">ATTĒLAM</div>
+        <div class="word roboto-font-c" id="word3">SKAŅAI</div>
+        <div class="word roboto-font-c" id="word4">STĀSTAM</div>
       </div>
     </div>
     <img class="logo" src="https://j-salins.github.io/alkimija/alkimija-logo-white.png"></img>
-    <div class="enter"><a href="https://alkimija.digital">UZ GALERIJU</a><span class="arrow">
-          &#8250;</span>
+    <div class="enter"><a href="https://alkimija.digital/video">UZ GALERIJU</a><span class="arrow">
+        &#8250;</span>
     </div>
-    </div>
+  </div>
   </div>
 
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
     html {
-        height: 100%;
-        width: 100%;
+      height: 100%;
+      width: 100%;
     }
+
     .content-container {
       display: grid;
       position: fixed;
@@ -56,10 +57,11 @@
       flex-direction: row;
       flex-wrap: wrap;
       /* Each column's width is based on its content */
-      gap: 20px;
+      gap: 7px;
       /* Adjusts the space between columns */
       /* Aligns the grid to the center of the container */
       color: white;
+      letter-spacing: 0.16rem;
       margin: 0 !important;
       grid-column: 1/2;
       grid-row: 1/2;
@@ -101,29 +103,31 @@
       font-family: "Montserrat", sans-serif;
       font-weight: 600;
       color: white;
-      margin-top: 5rem;
+      margin-top: 7rem;
       letter-spacing: 0.11rem;
       grid-column: 1/2;
       grid-row: 1/2;
       z-index: 555;
       user-select: none;
+      justify-content: center;
+      width: 100%;
     }
 
     .arrow {
       font-size: 1.5rem;
       padding-bottom: 0.5rem;
+      margin-top: -0.4rem;
     }
 
     a {
-      border-color:transparent!important;
-      border-width:0px!important;
+      border-color: transparent !important;
+      border-width: 0px !important;
     }
 
     .enter a {
       display: block !important;
       text-decoration: none;
       color: white;
-      border-color: transparent !important;
       display: flex;
       align-items: center;
       width: fit-content;
@@ -214,30 +218,28 @@
       color: white;
     }
 
-.sqs-html-content {
-display: none!important;
-}
+    .sqs-html-content {
+      display: none !important;
+    }
 
+    .sqs-svg-icon--wrapper.email div svg {
+      display: none !important;
+    }
 
-.sqs-svg-icon--wrapper.email div svg {
-display:none!important;
-}
+    .sqs-svg-icon--wrapper.email {
+      background-repeat: no-repeat;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='butt' stroke-linejoin='round'%3E%3Cpath d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'%3E%3C/path%3E%3Cpolyline points='22,6 12,13 2,6'%3E%3C/polyline%3E%3C/svg%3E");
+      background-position: center center;
+    }
 
-.sqs-svg-icon--wrapper.email {
-    background-repeat: no-repeat;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24' fill='none' stroke='%23ffffff' stroke-width='2' stroke-linecap='butt' stroke-linejoin='round'%3E%3Cpath d='M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z'%3E%3C/path%3E%3Cpolyline points='22,6 12,13 2,6'%3E%3C/polyline%3E%3C/svg%3E");
-    background-position: center center;
-}
-
-.sqs-svg-icon--wrapper div {
+    .sqs-svg-icon--wrapper div {
       background-color: transparent !important;
     }
 
-.sqs-layout > .sqs-row {
-   margin-left: 0;
-    margin-right: 0;
-}
-    
+    .sqs-layout>.sqs-row {
+      margin-left: 0;
+      margin-right: 0;
+    }
 
     #block-yui_3_17_2_1_1609326969853_5247 use.sqs-use--mask {
       fill: white !important;
@@ -249,7 +251,6 @@ display:none!important;
 
     .word-container {
       display: grid;
-      white-space: nowrap;
     }
 
     .word {
@@ -356,12 +357,15 @@ display:none!important;
 
       .enter {
         font-size: 1rem;
-        margin-top: 6rem;
+        margin-top: 8rem;
+        justify-content: left;
+        width: auto;
       }
 
       .arrow {
         font-size: 1.9rem;
         line-height: 0.9rem;
+        margin-top: 0;
       }
     }
 
